@@ -5,11 +5,10 @@ import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { Service } from '../Service/config'
 import { Button, Input, Logo } from './index'
-import { handleSubmit, register } from 'react-hook-form'
 import { login } from '../store/authSlice'
 
 
-const Signup = () => {
+const SignUps = () => {
 
     const navigate = useNavigate();
     const [error, setError] = useState('');
@@ -90,4 +89,4 @@ const Signup = () => {
     )
 }
 
-export default Signup
+export default SignUps
